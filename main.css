@@ -723,3 +723,374 @@ display: inline-block;
       height: 350px;
     }
   }
+
+  .plan-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.plan-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 18px 20px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(233, 62, 155, 0.25);
+}
+
+.plan-number {
+    font-size: 1.1rem;
+    min-width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgb(85, 12, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.plan-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.plan-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: rgb(200, 200, 200);
+}
+
+.plan-icon {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+   .contact-page,
+   .signin-page,
+   .signup-page {
+       margin: 0;
+       padding: 0;
+       min-height: 100vh;
+       font-family: "Poppins", sans-serif;
+       background: url('https://inspiredbymaps.com/wp-content/uploads/Music-Festivals-In-Norway-1080x706.jpg.webp') center/cover no-repeat fixed;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+ 
+ 
+   .contact-page::before,
+   .signin-page::before,
+   .signup-page::before {
+       content: "";
+       position: fixed;
+       inset: 0;
+       background: rgba(0, 0, 0, 0.7);
+       backdrop-filter: blur(4px);
+       z-index: -1;
+   }
+   
+   .contact-container,
+   .signin-container,
+   .signup-container {
+       backdrop-filter: blur(12px);
+       background: rgba(255, 255, 255, 0.08);
+       border: 1px solid rgba(255, 255, 255, 0.15);
+       border-radius: 30px;
+       padding: 50px;
+       width: 90%;
+       max-width: 500px;
+       box-shadow: 0 15px 35px rgba(121, 15, 82, 0.2);
+       text-align: center;
+       margin: 20px;
+   }
+   
+   .contact-container h2,
+   .signin-container h2,
+   .signup-container h2 {
+       color:  white;
+       font-size: 36px;
+       margin-bottom: 30px;
+       font-weight: 600;
+   }
+   
+
+   .form-group {
+       margin-bottom: 20px;
+       position: relative;
+   }
+   
+   
+   
+   .contact-form input,
+   .contact-form textarea,
+   .signin-form input,
+   .signup-form input {
+       width: 100%;
+       padding: 16px 20px;
+       margin-bottom: 0;
+       font-size: 16px;
+       border-radius: 12px;
+       border: 1px solid rgba(255, 255, 255, 0.3);
+       background: rgba(255, 255, 255, 0.1);
+       color: white;
+       outline: none;
+       transition: all 0.3s ease;
+       font-family: 'Poppins', sans-serif;
+       box-sizing: border-box;
+   }
+   
+   .contact-form input::placeholder,
+   .contact-form textarea::placeholder,
+   .signin-form input::placeholder,
+   .signup-form input::placeholder {
+       color: rgba(255, 255, 255, 0.6);
+   }
+   
+   .contact-form input:focus,
+   .contact-form textarea:focus,
+   .signin-form input:focus,
+   .signup-form input:focus {
+       border-color: rgb(219, 9, 142);
+       background: rgba(255, 255, 255, 0.15);
+       box-shadow: 0 0 0 3px rgba(219, 9, 142, 0.2);
+   }
+   
+   
+   .contact-form textarea {
+       height: 150px;
+       resize: vertical;
+       min-height: 100px;
+   }
+   
+   
+   .contact-form button,
+   .signin-form button,
+   .signup-form button {
+       width: 100%;
+       padding: 16px;
+       font-size: 18px;
+       border-radius: 12px;
+       border: none;
+       cursor: pointer;
+       background: rgb(121, 15, 82);
+       color: white;
+       font-weight: 600;
+       transition: all 0.3s ease;
+       margin-top: 10px;
+       letter-spacing: 1px;
+   }
+   
+   .contact-form button:hover,
+   .signin-form button:hover,
+   .signup-form button:hover {
+       background: rgb(158, 17, 106);
+       transform: translateY(-3px);
+       box-shadow: 0 10px 25px rgba(121, 15, 82, 0.4);
+   }
+   
+ 
+   .form-links {
+       margin-top: 25px;
+       text-align: center;
+   }
+   
+   .form-links a {
+       color: rgb(219, 9, 142);
+       text-decoration: none;
+       font-size: 15px;
+       display: block;
+       margin: 8px 0;
+   }
+   
+   .form-links a:hover {
+       text-decoration: underline;
+       color: white;
+   }
+   
+   
+   .forgot-password {
+       text-align: right;
+       margin-top: 8px;
+   }
+   
+   .forgot-password a {
+       color: rgba(255, 255, 255, 0.7);
+       text-decoration: none;
+       font-size: 14px;
+   }
+   
+   .forgot-password a:hover {
+       color: rgb(219, 9, 142);
+   }
+   
+   
+   .login-link,
+   .signup-link {
+       margin-top: 20px;
+       color: rgba(255, 255, 255, 0.8);
+       font-size: 15px;
+       padding-top: 15px;
+       border-top: 1px solid rgba(255, 255, 255, 0.1);
+   }
+   
+   .login-link a,
+   .signup-link a {
+       color: rgb(219, 9, 142);
+       font-weight: 600;
+       text-decoration: none;
+   }
+   
+   .login-link a:hover,
+   .signup-link a:hover {
+       text-decoration: underline;
+   }
+   
+   
+   .form-row {
+       display: flex;
+       gap: 15px;
+       margin-bottom: 20px;
+   }
+   
+   .form-group.half {
+       flex: 1;
+   }
+   
+   .form-row input {
+       width: 100%;
+       margin-bottom: 0;
+   }
+   
+   
+   @media (max-width: 768px) {
+       .contact-container,
+       .signin-container,
+       .signup-container {
+           padding: 40px 30px;
+           width: 85%;
+           max-width: 400px;
+       }
+       
+       .contact-container h2,
+       .signin-container h2,
+       .signup-container h2 {
+           font-size: 32px;
+       }
+       
+       .contact-form input,
+       .contact-form textarea,
+       .signin-form input,
+       .signup-form input {
+           padding: 14px 16px;
+           font-size: 15px;
+       }
+       
+       .form-row {
+           flex-direction: column;
+           gap: 0;
+       }
+       
+       .form-group.half {
+           margin-bottom: 20px;
+       }
+       
+       .form-row .form-group.half:last-child {
+           margin-bottom: 0;
+       }
+   }
+   
+   @media (max-width: 480px) {
+       .contact-container,
+       .signin-container,
+       .signup-container {
+           padding: 35px 25px;
+           width: 90%;
+           margin: 15px;
+       }
+       
+       .contact-container h2,
+       .signin-container h2,
+       .signup-container h2 {
+           font-size: 28px;
+       }
+   }
+
+
+.site-footer {
+    background: black;
+    padding: 40px 0 20px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    margin-top: auto;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: rgb(193, 48, 145);
+}
+
+.footer-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: rgb(17, 17, 17);
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.footer-social img {
+    width: 22px;
+    filter: invert(1);
+}
+
+.footer-copy {
+    color: rgb(204, 204, 204);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
