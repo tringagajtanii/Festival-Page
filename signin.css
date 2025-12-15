@@ -1,4 +1,4 @@
-signin-page,
+    .signin-page,
    .signup-page {
        margin: 0;
        padding: 0;
@@ -112,11 +112,15 @@ signin-page,
    }
    
    .form-links a {
-       color: rgb(219, 9, 142);
+       color: rgb(151, 6, 98);
        text-decoration: none;
        font-size: 15px;
        display: block;
        margin: 8px 0;
+   }
+   .register-link{
+     color: rgb(255, 255, 255, 0.8);
+     font-size: 15px;
    }
    
    .form-links a:hover {
