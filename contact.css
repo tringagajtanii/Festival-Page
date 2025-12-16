@@ -124,3 +124,19 @@
         background-attachment: scroll;
     }
 }
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 15px;  
+}
+
+.error-message {
+    display: block;
+    color: rgb(235, 58, 58);
+    font-size: 0.9rem;
+    margin-top: 1px;  
+    margin-bottom: 0; 
+    padding: 0;
+    border: none;
+    background: none;
+}
