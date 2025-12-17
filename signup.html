@@ -5,32 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sign Up — PriFest</title>
   <link rel="stylesheet" href="signin.css">
+  <script src="signup.js" defer></script>
 </head>
 <body class="signup-page">
 
   <section class="signup-container">
     <h2>Sign Up</h2>
 
-    <form class="signup-form">
+    <form class="signup-form" novalidate>
       <div class="form-row">
         <div class="form-group half">
           <input type="text" placeholder="First Name" required>
+          <span class="error-message"></span>
         </div>
         <div class="form-group half">
           <input type="text" placeholder="Last Name" required>
+          <span class="error-message"></span>
         </div>
       </div>
       
       <div class="form-group">
         <input type="email" placeholder="Email" required>
+        <span class="error-message"></span>
       </div>
       
       <div class="form-group">
         <input type="password" placeholder="Password" required>
+        <span class="error-message"></span>
       </div>
       
       <div class="form-group">
         <input type="password" placeholder="Confirm Password" required>
+        <span class="error-message"></span>
       </div>
 
       <button type="submit">Sign Up</button>

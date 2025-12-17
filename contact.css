@@ -58,6 +58,7 @@
     transition: all 0.3s ease;
     margin-bottom: 20px;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .contact-form button {
