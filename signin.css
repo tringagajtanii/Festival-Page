@@ -284,3 +284,25 @@
     color: rgb(235, 58, 58);
     text-align: center;
 }
+.signup-page .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+signup-page .form-group input {
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.5px solid rgba(204, 204, 204, 1);
+  border-radius: 8px;
+  outline: none;
+}
+signup-page .error-message {
+  display: none;
+  color: rgb(235, 58, 58);
+  font-size: 0.9rem;
+  margin-top: 1px;
+  margin-bottom: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
