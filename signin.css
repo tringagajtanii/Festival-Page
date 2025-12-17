@@ -1,4 +1,4 @@
-signin-page,
+    .signin-page,
    .signup-page {
        margin: 0;
        padding: 0;
@@ -112,11 +112,15 @@ signin-page,
    }
    
    .form-links a {
-       color: rgb(219, 9, 142);
+       color: rgb(151, 6, 98);
        text-decoration: none;
        font-size: 15px;
        display: block;
        margin: 8px 0;
+   }
+   .register-link{
+     color: rgb(255, 255, 255, 0.8);
+     font-size: 15px;
    }
    
    .form-links a:hover {
@@ -226,4 +230,57 @@ signin-page,
            font-size: 28px;
        }
    }
+   .signin-page .error-message {
+    display: none;
+    color: rgb(235, 58, 58);
+    font-size: 13px;
+    margin-top: 6px;
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+.signin-page .signin-form input.invalid {
+    border-color: rgb(235, 58, 58);
+    box-shadow: 0 0 0 2px rgba(235, 58, 58, 0.25);
+    background: rgba(255, 255, 255, 0.12);
+}
 
+.signin-page .signin-form input.valid {
+    border-color: rgb(100, 220, 160);
+    box-shadow: 0 0 0 2px rgba(100, 220, 160, 0.2);
+}
+.signin-page .form-group {
+    position: relative;
+}
+.signin-page .toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    user-select: none;
+    margin-top: -13px;
+}
+.signin-page .toggle-password:hover {
+    color: rgb(219, 9, 142);
+}
+.signin-page .signin-form .form-group input[type="password"] {
+    width: 100%;
+    padding: 14px 50px 14px 20px; 
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    box-sizing: border-box;
+}
+.signin-page .form-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgb(235, 58, 58);
+    text-align: center;
+}

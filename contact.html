@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - PriFest</title>
     <link rel="stylesheet" href="contact.css">
+     <script src="contact.js" defer></script>
 </head>
 <body class="contact-page">
     <section class="contact-container">
@@ -12,18 +13,22 @@
             <p class="contact-subtitle">Have a question, partnership idea, or media inquiry?
             We’d love to hear from you.</p>
    
-    <form class="contact-form">
+    <form class="contact-form" novalidate>
         <div class="form-group">
-            <input type="text" placeholder="Full Name" required>
+            <input type="text"name="name" placeholder="Full Name" required>
+            <span class="error-message name-error"></span>
         </div>
         <div class="form-group">
-            <input type="email" placeholder="Email Adress" required>
+            <input type="email" name="email" placeholder="Email Adress" required>
+            <span class="error-message email-error"></span>
         </div>
         <div class="form-group">
-            <input type="text" placeholder="Subject" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <span class="error-message subject-error"></span>
         </div>
         <div class="form-group">
-            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <textarea rows="4" name="message" placeholder="Your Message" required></textarea>
+            <span class="error-message message-error"></span>
         </div>
         <button type="submit">Send Message</button>
     </form>
