@@ -12,7 +12,7 @@
     padding: 0;
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
-    background: url('https://i.pinimg.com/1200x/73/4c/1f/734c1faca8e3b4a7c870cff9807c601c.jpg') center/cover no-repeat fixed;
+    background: url('images/contactbackground.jpg') center/cover no-repeat fixed;
     display: flex;
     align-items: center;
     justify-content: center;

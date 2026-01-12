@@ -297,12 +297,12 @@ font-size: 18px;
 }
 
 
-.lineup-card.dua { background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/16/Glasto24_28_300624_%28259_of_545%29_%2853838014719%29_%28cropped%29.jpg'); }
-.lineup-card.calvin { background-image: url('https://i.pinimg.com/736x/cf/b0/e9/cfb0e9ea96f08b40dfc2bb1359297e04.jpg'); }
-.lineup-card.rihanna { background-image: url('https://i.pinimg.com/736x/64/da/10/64da10b183e974165ee66da615e5f664.jpg'); }
-.lineup-card.yll { background-image: url('https://i.pinimg.com/736x/6e/77/7d/6e777d371c38789dcda1f6a5e9c12fb1.jpg'); }
-.lineup-card.elvana { background-image: url('https://i.pinimg.com/736x/b9/2e/25/b92e25c41298f11beac383e4b0fc4325.jpg'); }
-.lineup-card.gashi { background-image: url('https://i.pinimg.com/1200x/44/94/eb/4494eb3fcd453341558a7fa701f87615.jpg'); }
+.lineup-card.dua { background-image: url('images/dualipa.jpg'); }
+.lineup-card.calvin { background-image: url('images/calvin.jpg'); }
+.lineup-card.rihanna { background-image: url('images/rihana.jpg'); }
+.lineup-card.yll { background-image: url('images/yllilimani.jpg'); }
+.lineup-card.elvana { background-image: url('images/elvana.jpg'); }
+.lineup-card.gashi { background-image: url('images/gashi.jpg'); }
 
 .card {
     flex: 1 1 280px;
