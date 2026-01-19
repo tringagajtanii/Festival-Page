@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets</title>
+     <link rel="stylesheet" href="tickets.css">
+</head>
+<body>
+<header class="tickets-header">
+  <div class="container header-layout">
+    <div class="brand">
+      <a href="main.html">PriFest</a>
+    </div>
+  </div>
+</header>
+<main class="section container ticket-page">
+
+  <h2 class="section-title">Buy Your Tickets</h2>
+  <p class="section-sub">
+    Secure your place at PriFest 2026. Limited tickets available.
+  </p>
+
+  <div class="purchase-grid">
+
+    <div class="purchase-tickets">
+
+      <div class="ticket-option" data-price="25">
+        <h3>Day Pass</h3>
+        <p>Access for one day — great for sampling the festival.</p>
+        <span class="price">€25</span>
+        <button class="btn btn-primary select-ticket">Select</button>
+      </div>
+
+      <div class="ticket-option" data-price="60">
+        <h3>Weekend Pass</h3>
+        <p>Full access for all three festival days + discounts at food stalls</p>
+        <span class="price">€60</span>
+        <button class="btn btn-primary select-ticket">Select</button>
+      </div>
+
+      <div class="ticket-option vip" data-price="120">
+        <h3>VIP Pass</h3>
+        <p>Priority entry, VIP viewing area, and a complimentary drink.</p>
+        <span class="price">€120</span>
+        <button class="btn btn-primary select-ticket">Select</button>
+      </div>
+
+    </div>
+
+    <div class="checkout-box">
+      <h3>Order Summary</h3>
+
+      <div class="summary-row">
+        <span>Ticket</span>
+        <span id="summary-ticket">—</span>
+      </div>
+
+      <div class="summary-row">
+        <span>Price</span>
+        <span id="summary-price">€0</span>
+      </div>
+
+      <div class="summary-row total">
+        <span>Total</span>
+        <span id="summary-total">€0</span>
+      </div>
+
+      <button class="btn btn-primary checkout-btn" disabled>
+        Confirm Purchase
+      </button>
+
+      <p class="checkout-note">
+        * Payment is simulated for demo purposes.
+      </p>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-left">
+          <h2 class="footer-logo">PriFest</h2>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a href="#"><img src="images/000000.svg" alt="Facebook"></a>
+          <a href="#"><img src="images/000000 (1).svg" alt="X">          </a>
+          <a href="#"><img src= "images/000000 (2).svg"alt="Instagram"></a>
+          <a href="#"><img src="images/000000 (3).svg" alt="YouTube"></a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 PriFest — All rights reserved.</p>
+    </footer>
+</body>
+</html>
