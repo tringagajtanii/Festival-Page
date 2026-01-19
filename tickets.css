@@ -1,18 +1,36 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  color: white;
   margin: 0;
-  background: rgb(1, 1, 48);
-  overflow-x: hidden;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: url('images/tickets.jpg') center/cover no-repeat fixed;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px); 
+    z-index: -1;
 }
 main{
     margin: 8px;
 }
 .page-content {
-  padding-top: 100px;
+  padding-top: 120px;
+  margin-bottom: 20px;
+}
+.purchase-tickets, .checkout-box {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(121, 15, 82, 0.2);
 }
 .tickets-header {
     background: rgba(14, 0, 20, 0.6);
@@ -25,23 +43,30 @@ main{
     width: 100%;
     z-index: 100;
 }
-
+.tickets-header .header-layout {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 30px;
+}
 .tickets-header .brand a {
     color: rgb(85, 12, 58); 
     font-weight: 700;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-.ticket-page {
-  margin-top: 120px;
-}
-.ticket-page {
-  margin-top: 120px;
-}
-.ticket-page {
-  margin-top: 120px;
-}
+    font-size: 2rem;
+    text-decoration: none; 
 
+}
+.ticket-page {
+  margin-bottom: 80px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+.section-title .section-sub{
+  padding-left: 70px;
+}
 .purchase-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -61,6 +86,19 @@ main{
   padding: 30px;
   box-shadow: 0 0 25px rgba(121,15,82,0.2);
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ticket-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .ticket-option:hover {
@@ -69,13 +107,30 @@ main{
 
 .ticket-option h3 {
   font-size: 26px;
-  margin-bottom: 10px;
+}
+.ticket-option h3,
+.ticket-option p {
+  margin: 0;
+}
+
+.ticket-option p {
+  margin-top: 8px;
+  max-width: 95%;
 }
 
 .ticket-option .price {
   font-size: 32px;
   font-weight: 800;
-  color: rgb(193,48,145);
+  color: white;
+  margin-right: 20px;
+}
+
+.ticket-option .select-ticket {
+  margin-left: 10px;
+}
+.ticket-option .price,
+.ticket-option .select-ticket {
+  align-self: center;
 }
 
 .purchase-tickets .select-ticket {
@@ -120,8 +175,24 @@ main{
 }
 
 .checkout-btn {
-  width: 100%;
-  margin-top: 25px;
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    background: rgb(85, 12, 58);
+    color: white;
+    transition: all 0.3s ease;
+
+}
+.checkout-btn:hover {
+    background: white;
+    color: rgb(85, 12, 58);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(121, 15, 82, 0.3);
 }
 
 .checkout-note {
@@ -148,6 +219,7 @@ footer {
     margin: 0;
     padding: 0;
     width: 100%;
+    margin-top: 10px;
     
 }
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy Tickets</title>
      <link rel="stylesheet" href="tickets.css">
+     <script src="tickets.js" defer></script>
 </head>
 <body>
 <header class="tickets-header">
@@ -14,7 +15,8 @@
     </div>
   </div>
 </header>
-<main class="section container ticket-page">
+<div class="page-content">
+  <main class="section container ticket-page">
 
   <h2 class="section-title">Buy Your Tickets</h2>
   <p class="section-sub">
@@ -24,36 +26,54 @@
   <div class="purchase-grid">
 
     <div class="purchase-tickets">
+        <div class="ticket-option" data-price="25">
 
-      <div class="ticket-option" data-price="25">
-        <h3>Day Pass</h3>
-        <p>Access for one day — great for sampling the festival.</p>
-        <span class="price">€25</span>
-        <button class="btn btn-primary select-ticket">Select</button>
+          <div class="ticket-left">
+            <h3>Day Pass</h3>
+            <p>Access for one day — great for sampling the festival.</p>
+          </div>
+
+          <div class="ticket-right">
+            <span class="price">€25</span>
+            <button class="btn btn-primary select-ticket">Select</button>
+          </div>
+
+        </div>
+
+            <div class="ticket-option" data-price="60">
+
+          <div class="ticket-left">
+            <h3>Weekend Pass</h3>
+            <p>Full access for all three festival days + discounts at food stalls.</p>
+          </div>
+
+          <div class="ticket-right">
+            <span class="price">€60</span>
+            <button class="btn btn-primary select-ticket">Select</button>
+          </div>
+
+        </div>
+
+            <div class="ticket-option vip" data-price="120">
+
+        <div class="ticket-left">
+          <h3>VIP Pass</h3>
+          <p>Priority entry, VIP viewing area, and a complimentary drink.</p>
+        </div>
+
+        <div class="ticket-right">
+          <span class="price">€120</span>
+          <button class="btn btn-primary select-ticket">Select</button>
+        </div>
+        </div>
       </div>
-
-      <div class="ticket-option" data-price="60">
-        <h3>Weekend Pass</h3>
-        <p>Full access for all three festival days + discounts at food stalls</p>
-        <span class="price">€60</span>
-        <button class="btn btn-primary select-ticket">Select</button>
-      </div>
-
-      <div class="ticket-option vip" data-price="120">
-        <h3>VIP Pass</h3>
-        <p>Priority entry, VIP viewing area, and a complimentary drink.</p>
-        <span class="price">€120</span>
-        <button class="btn btn-primary select-ticket">Select</button>
-      </div>
-
-    </div>
 
     <div class="checkout-box">
       <h3>Order Summary</h3>
 
       <div class="summary-row">
         <span>Ticket</span>
-        <span id="summary-ticket">—</span>
+        <ul id="summary-ticket">—</ul>
       </div>
 
       <div class="summary-row">
@@ -76,6 +96,7 @@
     </div>
   </div>
 </main>
+</div>
 <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-left">
