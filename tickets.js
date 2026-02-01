@@ -59,15 +59,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   checkoutBtn.addEventListener("click", () => {
-    if (order.length === 0) return;
+  if (order.length === 0) return;
 
-    const ticketList = order.map(t => t.name).join(", ");
-    const totalPrice = order.reduce((sum, t) => sum + t.price, 0);
-
-    alert(`Thank you for your purchase!\n\nTickets: ${ticketList}\nTotal: €${totalPrice}`);
-
+  fetch("php/tickets.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(order)
+  })
+  .then(res => res.text())
+  .then(data => {
+    alert("Purchase saved successfully");
     order = [];
     updateSummary();
+  })
+  .catch(() => {
+    alert("Error saving purchase");
   });
+});
+
 });
 
