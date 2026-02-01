@@ -12,10 +12,10 @@ class User {
         }
 
         $db = Database::connect();
-        $hash = password_hash($password, PASSWORD_DEFAULT);
+        $hash = password($password, PASSWORD_DEFAULT);
 
         $stmt = $db->prepare(
-            "INSERT INTO users (first_name,last_name,email,password_hash)
+            "INSERT INTO users (first_name,last_name,email,password)
              VALUES (?,?,?,?)"
         );
         return $stmt->execute([$first,$last,$email,$hash]);
