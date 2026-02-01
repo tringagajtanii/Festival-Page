@@ -10,11 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     User::create(
-        $_POST["first_name"],
-        $_POST["last_name"],
-        $_POST["email"],
-        $_POST["password"]
-    );
+    $_POST["first_name"],
+    $_POST["last_name"],
+    $_POST["email"],
+    $_POST["password"]
+);
     header("Location: ../signin.html");
     exit;
 }
