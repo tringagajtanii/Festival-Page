@@ -1,4 +1,6 @@
 <?php
+echo"THIS USER FILE IS LOADED";
+exit;
 require_once "Database.php";
 
 class User {
